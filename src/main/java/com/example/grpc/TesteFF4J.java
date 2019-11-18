@@ -16,6 +16,10 @@ public class TesteFF4J {
 
         ff4j.getFeatures().size();
 
+
+        String name = ff4j.getProperty("name").getValue().toString();
+        System.out.println(name);
+
         if (ff4j.check("hello")) return "Helloooooow Worlddddd!!!";
 
         return "Feature is disabled";

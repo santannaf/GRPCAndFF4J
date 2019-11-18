@@ -11,5 +11,7 @@ public class FF4JConfiguration implements FF4jProvider {
 
     @Bean
     @Primary
-    public FF4j getFF4j() { return new FF4j("ff4j-features.xml"); }
+    public FF4j getFF4j() {
+        return new FF4j("ff4j-features.xml");
+    }
 }
